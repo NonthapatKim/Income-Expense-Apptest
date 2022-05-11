@@ -46,7 +46,7 @@ function App() {
 
             <Routes> 
               <Route path="/report" element={<ReportComp/>}></Route> 
-              <Route path="/insert" element={<><Formcomp onAdditem={AddnewItem}/>, <Datat items={items}/> </>}></Route> 
+              <Route path="/insert" element={<><Formcomp onAdditem={AddnewItem}/> <Datat items={items}/> </>}></Route> 
             </Routes>
           </div>
         </div>
