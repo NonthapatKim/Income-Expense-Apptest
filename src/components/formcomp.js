@@ -49,6 +49,9 @@ const Formcomp = (props) => {
                                 <label className="form-label">จำนวนเงิน</label>
                                 <input type="number" className="form-control" placeholder="(รายรับ +), (รายจ่าย -)" onChange={inputnumber} value={amount}/>
                                 <small className="text-danger">จำนวนรายจ่าย ต้องใส่เครื่องหมาย - ข้างหน้าตัวเลขเท่านั้น</small>
+                                <div className="bg-danger text-center text-white p-1">
+                                    <p className="mt-3 fs-6">รายรับไม่ต้องใส่เครื่องหมาย + นะครับเนเน่!</p>
+                                </div>
                             </div>
                             <div className="d-grid gap-2">
                                 <button type="submit" className="btn btn-primary" disabled={!formValid}>เพิ่มข้อมูล</button>
